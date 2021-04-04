@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+section
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #8e6df5;
+	padding: 100px 20px;
+	box-sizing: border-box;
+}
+section::before
+{
+	content: '';
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* background-color: #06caae; */
+	/* clip-path: circle(65% at 100% -20%); */
+}
+section::after
+{
+	content: '';
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* background-color: #8c3131; */
+	/* clip-path: circle(35% at 0% 100%); */
+}
+.container
+{
+	position: relative;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container .card
+{
+	position: relative;
+	width: 191px;
+	height: 299px;
+	margin: 48px 19px;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(15px);
+}
+.container .card .imgbx
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-right: 20px;
+	transition: 0.5s ease-in-out;
+
+
+}
+.container .card:hover .imgbx
+{
+	transform: translateY(-100px);
+}
+.container .card .imgbx img
+{
+	max-width: 100%;
+	margin:0 0 10px;
+	transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgbx img
+{
+	transform: translate(-20px, -40px) rotate(-25deg) scale(1.4);
+}
+.container .card .imgbx h2
+{
+	color: #fff;
+	font-weight: 48;
+	text-align: center;
+	font-size: 23px;
+}
+
+.container .card:hover 
+{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(-50px);
+}
+.container .card ,
+.container .card 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:8px 20px;
+}
+.container .card  h3,
+.container .card  h3
+{
+	color: #000;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+
+.container .card  a
+{
+	position: relative;
+	top: 10px;
+	display: inline-block;
+	padding: 12px 30px;
+	background: #0fe65b;
+	border-radius: 40px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #111;
+	text-decoration: none;
+	text-transform: uppercase;
+}
